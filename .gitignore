@@ -66,3 +66,4 @@ yarn.lock
 **/.idea/*
 !.idea/runConfigurations
 .eslint-meteor-files
+.vscode/launch.json

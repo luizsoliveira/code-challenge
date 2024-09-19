@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "/*": [
+        "./*"
+      ],
+      "meteor/mongo": [
+        "/Users/luizsoliveira/.meteor/packages/mongo/2.0.2/web.browser/local_collection_driver.js",
+        "/Users/luizsoliveira/.meteor/packages/mongo/2.0.2/web.browser/collection.js",
+        "/Users/luizsoliveira/.meteor/packages/mongo/2.0.2/web.browser/connection_options.js",
+        "/Users/luizsoliveira/.meteor/packages/mongo/2.0.2/web.browser/doc_fetcher.js",
+        "/Users/luizsoliveira/.meteor/packages/mongo/2.0.2/web.browser/mongo_driver.js",
+        "/Users/luizsoliveira/.meteor/packages/mongo/2.0.2/web.browser/mongo_utils.js",
+        "/Users/luizsoliveira/.meteor/packages/mongo/2.0.2/web.browser/observe_multiplex.js",
+        "/Users/luizsoliveira/.meteor/packages/mongo/2.0.2/web.browser/oplog_observe_driver.js",
+        "/Users/luizsoliveira/.meteor/packages/mongo/2.0.2/web.browser/oplog_tailing.js",
+        "/Users/luizsoliveira/.meteor/packages/mongo/2.0.2/web.browser/oplog_v2_converter.js",
+        "/Users/luizsoliveira/.meteor/packages/mongo/2.0.2/web.browser/polling_observe_driver.js",
+        "/Users/luizsoliveira/.meteor/packages/mongo/2.0.2/web.browser/remote_collection_driver.js"
+      ],
+      "meteor/ecmascript": [
+        "/Users/luizsoliveira/.meteor/packages/ecmascript/0.16.9/web.browser/ecmascript.js"
+      ],
+      "meteor/hot-module-replacement": [
+        "/Users/luizsoliveira/.meteor/packages/hot-module-replacement/0.5.4/web.browser/hot-api.js",
+        "/Users/luizsoliveira/.meteor/packages/hot-module-replacement/0.5.4/web.browser/client.js",
+        "/Users/luizsoliveira/.meteor/packages/hot-module-replacement/0.5.4/web.browser/server.js"
+      ],
+      "meteor/react-meteor-data": [
+        "/Users/luizsoliveira/.meteor/packages/react-meteor-data/3.0.2/web.browser/index.js",
+        "/Users/luizsoliveira/.meteor/packages/react-meteor-data/3.0.2/web.browser/suspense/index.js"
+      ]
+    }
+  },
+  "typeAcquisition": {
+    "include": [
+      "meteor"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    ".meteor"
+  ]
+}
