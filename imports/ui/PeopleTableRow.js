@@ -1,9 +1,9 @@
-import { Meteor } from 'meteor/meteor';
-import React, { useEffect, useState } from 'react';
-import { useTracker } from 'meteor/react-meteor-data';
-import { People } from '../../people/people';
-import moment from 'moment';
 import { CheckIcon, LogoutIcon } from '@heroicons/react/solid';
+import { Meteor } from 'meteor/meteor';
+import { useTracker } from 'meteor/react-meteor-data';
+import moment from 'moment';
+import React, { useEffect, useState } from 'react';
+import { People } from '../../people/people';
 
 export function PeopleTableRow({ personId }) {
   const person = useTracker(() => People.findOne(personId), [personId]);
@@ -55,7 +55,7 @@ export function PeopleTableRow({ personId }) {
             onClick={handleCheckIn}
           >
             <CheckIcon className="mr-1 h-5 w-5" />
-            Check-in
+            Check-in {person.firstName} {person.lastName}
           </button>
         )}
         {person.checkInDate && !person.checkOutDate && timeSinceCheckIn > 5 && (
@@ -64,7 +64,7 @@ export function PeopleTableRow({ personId }) {
             onClick={handleCheckOut}
           >
             <LogoutIcon className="mr-1 h-5 w-5" />
-            Check-out
+            Check-out {person.firstName} {person.lastName}
           </button>
         )}
       </td>

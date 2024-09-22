@@ -11,7 +11,7 @@ export function EventSelector({
         htmlFor="event-selector"
         className="mb-2 block text-lg font-medium"
       >
-        Select an Event
+        Event
       </label>
       <select
         id="event-selector"
@@ -19,7 +19,7 @@ export function EventSelector({
         onChange={(e) => setSelectedEventId(e.target.value || null)}
         className="w-full rounded border border-gray-700 bg-gray-800 p-2 text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
       >
-        <option value="">-- Please choose an event --</option>
+        <option value="">Select an Event</option>
         {communities.map((community) => (
           <option key={community._id} value={community._id}>
             {community.name}
